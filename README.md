@@ -70,9 +70,13 @@ Você pode personalizar o currículo de diversas maneiras, alterando o código P
 - **Cores**: Altere os valores `RGBColor` para mudar as cores do texto (ex: `RGBColor(255, 0, 0)` para vermelho).
 - **Layout**: Ajuste o alinhamento (`WD_PARAGRAPH_ALIGNMENT`) e o espaçamento (`paragraph_format.space_after`) para controlar o layout das seções.
 - **Novas Seções**: Adicione novas seções copiando e adaptando o padrão de `doc.add_heading` e `doc.add_paragraph`.
-
+  
 ---
 
 **Autor**: Nelson Prado
+
+## Análise de IA do Currículo
+
+O currículo gerado por este script obteve uma pontuação impressionante de **93** em uma análise de IA, classificando-o com uma nota **A**. Isso indica que o formato e o conteúdo gerados são altamente otimizados e bem estruturados para serem avaliados por sistemas de inteligência artificial, que são frequentemente utilizados em processos de recrutamento modernos. Embora a pontuação seja excelente, é sempre recomendável revisar a análise detalhada para identificar quaisquer pontos que possam ser aprimorados para uma perfeição ainda maior.
 
 
