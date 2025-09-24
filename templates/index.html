@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatador de Currículo com IA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formatador de Currículo com IA</h1>
+        <p>Arraste e solte um arquivo de currículo (.docx ou .pdf) abaixo para formatá-lo com nosso template.</p>
+
+        <div id="message-container"></div>
+
+        <div id="upload-container">
+            <form id="upload-form">
+                <div class="drop-zone" id="drop-zone">
+                    <span class="drop-zone-text">Arraste e solte o arquivo aqui ou clique para selecionar</span>
+                    <input type="file" name="file" id="file-input" accept=".pdf,.docx" required>
+                </div>
+                <button type="submit" id="submit-button">Formatar Currículo</button>
+            </form>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Processando... Isso pode levar alguns segundos.</p>
+        </div>
+    </div>
+</body>
+</html>
