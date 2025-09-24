@@ -1,0 +1,8 @@
+flask
+werkzeug
+python-dotenv
+google-generativeai
+python-docx
+pypdf
+
+
