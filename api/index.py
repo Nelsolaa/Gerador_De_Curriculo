@@ -1,7 +1,7 @@
 import os
 import json
 import logging
-import io  # <-- Importante para manipulação em memória
+import io 
 
 from flask import Flask, render_template, request, jsonify, Response
 from werkzeug.utils import secure_filename
@@ -23,8 +23,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # Constantes e configuração do Flask
 ALLOWED_EXTENSIONS = {'pdf', 'docx'}
 
-# O nome da pasta de templates é ajustado para funcionar dentro da pasta /api
-app = Flask(__name__, template_folder='../templates')
+# O nome das pastas de templates e static é ajustado para funcionar na Vercel
+app = Flask(__name__, template_folder='../templates', static_folder='../static') # <-- LINHA CORRIGIDA
 app.config['SECRET_KEY'] = os.getenv('SEGREDO_FLASK')
 
 
