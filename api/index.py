@@ -24,7 +24,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 ALLOWED_EXTENSIONS = {'pdf', 'docx'}
 
 # O nome das pastas de templates e static é ajustado para funcionar na Vercel
-app = Flask(__name__, template_folder='../templates', static_folder='../static') # <-- LINHA CORRIGIDA
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+app = Flask(__name__,
+            template_folder=os.path.join(BASE_DIR, "templates"),
+            static_folder=os.path.join(BASE_DIR, "static"))
+
 app.config['SECRET_KEY'] = os.getenv('SEGREDO_FLASK')
 
 
