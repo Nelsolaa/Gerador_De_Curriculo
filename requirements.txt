@@ -1,8 +1,6 @@
-flask
-werkzeug
+Flask
 python-dotenv
 google-generativeai
 python-docx
 pypdf
-
-
+werkzeug
