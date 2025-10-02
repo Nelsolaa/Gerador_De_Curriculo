@@ -213,7 +213,7 @@ def upload_file():
             return jsonify({'status': 'error', 'message': 'Erro crítico de configuração no servidor.'}), 500
 
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-1.0-pro')
 
         prompt = f"""
         Você é um assistente de RH especialista em analisar currículos. Sua tarefa é extrair as informações do texto de um currículo e retorná-las ESTRITAMENTE em formato JSON.
