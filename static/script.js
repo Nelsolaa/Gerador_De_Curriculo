@@ -54,7 +54,7 @@
             formData.append('file', fileInput.files[0]);
 
             try {
-                const response = await fetch('/upload', {
+                const response = await fetch('/', {
                     method: 'POST',
                     body: formData
                 });
