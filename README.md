@@ -4,8 +4,8 @@
 
 Este projeto é uma aplicação web que utiliza inteligência artificial para formatar currículos. Desenvolvido com Flask no backend e uma interface de usuário construída com HTML, CSS e JavaScript, ele permite que os usuários enviem arquivos de currículo nos formatos `.docx` ou `.pdf`. A aplicação então extrai as informações relevantes do currículo usando a API Gemini do Google, processa esses dados e gera um novo currículo formatado em um documento `.docx` padronizado, que pode ser baixado pelo usuário. O objetivo principal é simplificar o processo de criação de currículos bem estruturados, aproveitando o poder da IA para interpretar e organizar as informações de forma eficiente.
 
-
-
+## Link para acessar 
+https://gerador-de-curriculo-alpha.vercel.app/
 
 ## Tecnologias Utilizadas
 
